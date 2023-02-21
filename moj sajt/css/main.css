@@ -1,0 +1,48 @@
+h5 {
+    color: black;
+    text-shadow: black;
+}
+
+btn-outline-success {
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}
+
+nav {
+    margin-bottom: 30px;
+}
+
+.ikonica {
+    width: 30px;
+}
+
+.glavnaSlika {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.automobili {
+    padding-bottom: 30px;
+}
+
+.auto {
+    margin-bottom: 30px;
+}
+
+.futer {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+}
+
+.ikonica1 {
+    width: 30px;
+}
+
+.video {
+    margin-bottom: 30px;
+}

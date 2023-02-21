@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mercedes stranica">
+    <meta name="keywords" content="Mercedes Benz,automobili,preformanse">
+    <meta name="author" content="Aleksandar Dodic,aleksandarelite5518@gs.viser.edu.rs">
+    <title>Mercedes-Benz|Kontakt</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/contact.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ76tkVODiMZnR5Ipvob3uIUP5pYbS-TQ&callback=initMap&libraries=&v=weekly" defer></script>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    <img class="ikonica" src="/slike/znak.jpg" alt="">
+                </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/strane/onama.html">O nama<a> </li> 
+                        <li class="nav-item"> <a class="nav-link" href="/strane/galerija.html">Galerija</a> </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Vise
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/strane/download.pdf">Preuzimanje</a>
+                                <a class="dropdown-item" href="/strane/stampa.html">Stampa</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="/strane/kontakt.html" tabindex="-1" aria-disabled="true">Kontakt</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-4">Kontaktirajte nas</h1>
+                <p class="lead"></p>
+                <hr class="my-4">
+                <p>Mozete nas kontaktirati putem mejla ili pozivom na broj, Takodje nas mozete naci na dobro poznatoj adresi. Preporucijemo Vam da zakazete probnu voznju nasim novim Maybach Vision vozilima.</p>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="mailto:aleksandarelite5518@gs.viser.edu.rs/+381666060058">
+                        Zakazite probnu voznju
+                    </a>
+                </p>
+            </div>
+            <!--The div element for the map -->
+            <div id="map"></div>
+        </div>
+        <div class="futer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>
+                            Adresa: Vojvode Stepe 283, Beograd 11000
+                        </p>
+                        <p>
+                            Kontakt: 011 3970429
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>
+                            Osnovana: 1974
+                        </p>
+                        <p>
+                            Aleksandar Dodic, Elite55-18
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <script>
+            // Initialize and add the map
+            function initMap() {
+                // The location of Uluru
+                const uluru = {
+                    lat: 44.768484387994334,
+                    lng: 20.47996225409811
+                };
+                // The map, centered at Uluru
+                const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 18,
+                    center: uluru,
+                });
+                // The marker, positioned at Uluru
+                const marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map,
+                });
+            }
+        </script>
+    </body>
+
+</html>
